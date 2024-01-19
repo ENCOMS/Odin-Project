@@ -1,0 +1,148 @@
+Topic: Commit Messages
+
+links: 
+- https://www.theodinproject.com/lessons/foundations-commit-messages
+- https://cbea.ms/git-commit/
+
+
+1. How to write a meaningful commit message.
+
+When you are applying for jobs, employers will look through your projects on GitHub and they will look through your commit history. Having good commits as a novice developer will help you stand out.
+
+Having a good commit message history will allow you (or other developers working on your code) to quickly see what changes were made and why. This is useful if a bug is found in the code that needs to be fixed!
+
+Having a good commit message history will also be helpful if you come back to a project you were working on after stepping away from it for a while. You likely won’t remember your thought process and changes made when initially writing out the code.
+
+
+2. Why meaningful commit messages are important
+
+A good commit vs a bad commit
+
+A bad commit
+- Is too vague or too obscure to know what was done and what was changed or added
+
+A good commit
+- Explain the why behind your changes
+- Describes what problem your changes solve and how it solve them
+
+a good commit have a:
+- Why
+- How
+
+An effective commit consist of two separate parts:
+A subject and a Body.
+
+Subject:
+--------
+A brief summary of the change you made to the project.
+
+"This is the change I made to the codebase."
+
+tip: GitHub has a 72-character limit so we recommend keeping your commits’ subject to within this amount.
+
+Body:
+-----
+A concise yet clear description of what you did.
+
+"Describe the problem your commit solves and how."
+
+full example:
+-------------
+
+"Add missing link and alt text to the company's logo
+
+Screen readers won't read the images to users with disabilities without this information"
+
+Reasons for doing like this:
+---------------------------
+This way developers can gain a better understanding of this commit message because it does the following:
+
+- Provides a subject that specifies your code’s action (e.g., “Add missing link and alt text to the company’s logo”).
+- Contains a body that provides a concise yet clear description of why the commit needed to be made (e.g., “Screen readers won’t read the images to users with disabilities without this information”).
+- Separates the subject from the body with a new/blank line. This is a best practice we highly recommend following. It makes commit messages easier for other developers to read.
+
+Way to make a new line:
+----------------------
+
+git commit -m "subject msg" -m "body msg"
+
+
+3. When to commit.
+
+A good way to view a commit is like a “snapshot” of your code at the moment that it was made. That version of your code up to that point will be saved for you to revert back to or look back at.
+
+When writing code, it’s considered best practice to commit every time you have a meaningful change in the code. This will create a timeline of your progress and show that your finished code didn’t appear out of nowhere.
+
+In other words, make a commit if you get a piece of code you are working on to function like you want it to, fix a typo, or fix a bug. As you gain experience, you will develop a better feel for what should be committed!
+
+If in the future the code breaks, you can check past commits and see the difference to the actual code, and maybe determinate what is the problem.
+
+- Make a commit the moment the part of the code is working as you want.
+- Make a commit if the change you made fix complete the problem.
+- Make a commit when you feel the program is working as intended.
+
+
+The rules of a well-crafted git commits:
+---------------------------------------
+A well-crafted Git commit message is the best way to communicate context about a change to fellow developers (and indeed to their future selves). A diff will tell you what changed, but only the commit message can properly tell you why.
+
+cbeams author on a comment of Peter Hutterer(?) makes this point well:
+
+Re-establishing the context of a piece of code is wasteful. We can’t avoid it completely, so our efforts should go to reducing it [as much] as possible. Commit messages can do exactly that and as a result, a commit message shows whether a developer is a good collaborator.
+
+A well-cared for log is a beautiful and useful thing. git blame, revert, rebase, log, shortlog and other subcommands come to life. Reviewing others’ commits and pull requests becomes something worth doing, and suddenly can be done independently. Understanding why something happened months or years ago becomes not only possible but efficient.
+
+A project’s long-term success rests (among other things) on its maintainability, and a maintainer has few tools more powerful than his project’s log. It’s worth taking the time to learn how to care for one properly. What may be a hassle at first soon becomes habit, and eventually a source of pride and productivity for all involved.
+
+Most programming languages have well-established conventions as to what constitutes idiomatic style, i.e. naming, formatting and so on. There are variations on these conventions, of course, but most developers agree that picking one and sticking to it is far better than the chaos that ensues when everybody does their own thing.
+
+A team’s approach to its commit log should be no different. In order to create a useful revision history, teams should first agree on a commit message convention that defines at least the following three things:
+
+- Style. Markup syntax, wrap margins, grammar, capitalization, punctuation. Spell these things out, remove the guesswork, and make it all as simple as possible. The end result will be a remarkably consistent log that’s not only a pleasure to read but that actually does get read on a regular basis.
+
+- Content. What kind of information should the body of the commit message (if any) contain? What should it not contain?
+
+- Metadata. How should issue tracking IDs, pull request numbers, etc. be referenced?
+
+The seven rules of a great Git commit message:
+----------------------------------------------
+
+1. Separate subject from body with a blank line
+2. Limit the subject line to 50 characters
+3. Capitalize the subject line
+4. Do not end the subject line with a period
+5. Use the imperative mood in the subject line
+6. Wrap the body at 72 characters
+7. Use the body to explain what and why vs. how
+
+A type of example:
+
+-----------------------------------------------------------------
+Summarize changes in around 50 characters or less
+
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
+
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequences of this
+change? Here's the place to explain them.
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
+------------------------------------------------------------------
