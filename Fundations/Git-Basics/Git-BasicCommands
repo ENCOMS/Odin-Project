@@ -1,0 +1,147 @@
+Topic: Git Basics - Commands
+
+Link:https://www.theodinproject.com/lessons/foundations-git-basics
+
+Overview: 
+- How to create a repository on GitHub.
+- How to get files to and from GitHub.
+- How to take “snapshots” of your code.
+
+
+How to create a repository on GitHub:
+------------------------------------
+
+Check git version 2.28 or later
+git --version
+
+If not set, set the local default git branch to main
+git config --global init.defaultBranch main
+
+
+Create a repository in GitHub
+- Follow the steps in Setup GIT (https://www.theodinproject.com/lessons/foundations-setting-up-git)
+- Sign on GitHub
+- Create a new repository:
+    * Click in the + symbol and select create a new a repository.
+    * give the repo a name (in this case git_test)
+    * select add README.MD file
+    * Click in Create repository.
+
+How to get files to and from GitHub:
+------------------------------------
+- Copy the SSH link from GitHub new repository:
+    * Click the button named Code and select SSH
+    * Copy the link.
+- Create a directory in your computer where to store the clone repository:
+    * In the terminal, navigate to home folder type this:
+        mkdir repos
+        cd repos
+- Clone the github repository with git clone
+    git clone + SSH Link copied from github
+- Example:
+        git clone git@github.com:ENCOMS/git_test.git
+- Check if the address is correct:
+        git remote -v
+
+
+How to take “snapshots” of your code:
+-------------------------------------
+
+Git workflow:
+------------
+Working tree - create or modified a file, before transfering them to stage.
+Staging area - files that are modified and want to be commited, need to in the staging area or waiting room.
+.git directory (repository) save the changes to the repository, then push to remote repo.
+
+
+
+How to use the workflow
+- Inside git_test create a text file hello_world
+    touch hello_world.txt
+- Check status of git
+    git status
+- add files to the staging area
+    git add hello_world.txt
+- Check status of git again
+    git status
+- Commit the changes to the .git directory or repo
+    git commit -m "Add hello_world.txt to repo"
+    note: -m stand for message.
+- Check status of git again
+    git status
+- Checking the changes and commits done and by who.
+    git log
+    note: if too much scroll, press q to escape.
+- Modifing a file or two.
+- Edit hello_world.txt with a lorem ipsum
+    In windows with MinGW64: 
+        notepad.exe hello_world.txt
+    In linux: 
+        code hello_world.txt
+- Edit README.MD with:
+    My first GitHub repo!
+    Hello Odin!
+- To save all files to stage
+    git add .
+- commit the files that are in the stage area with a meaningful menssage.
+    git commit -m "Edit hello_world.txt and Readme.md"
+- check git log as to see the commits done.
+    git log
+
+Upload the work to GitHub
+-------------------------
+In this case since we are not dealing with other branch or different remote:
+- Push the main branch to github
+    git push
+    *if need to be more specific
+    git push origin main
+
+Cheatsheet
+----------
+This is a reference list of the most commonly used Git commands. (You might consider bookmarking this handy page.) Try to familiarize yourself with the commands so that you can eventually remember them all:
+
+- Commands related to a remote repository:
+    git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+    git push or git push origin main (Both accomplish the same goal in this context)
+- Commands related to the workflow:
+    git add .
+    git commit -m "A message describing what you have done to make this snapshot different"
+- Commands related to checking status or log history
+    git status
+    git log
+
+The basic Git syntax is:
+-----------------------
+program | action | destination.
+
+For example,
+
+git add . is read as:
+git | add | ., where the period represents everything in the current directory.
+
+git commit -m "message" is read as:
+git | commit -m | "message"
+
+git status is read as:
+git | status | (no destination).
+
+
+Git best practices:
+-------------------
+
+Two helpful best practices to consider are atomic commits and leveraging those atomic commits to make your commit messages more useful to future collaborators.
+
+- Atomic commits:
+An atomic commit is a commit that includes changes related to only one feature or task of your program. There are two main reasons for doing this: first, if something you change turns out to cause some problems, it is easy to revert the specific change without losing other changes; and second, it enables you to write better commit messages.
+
+
+Changing the Git commit message editor:
+git config --global core.editor "code --wait"
+
+
+
+
+
+
+
+

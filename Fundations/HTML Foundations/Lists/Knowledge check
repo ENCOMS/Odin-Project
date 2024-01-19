@@ -1,0 +1,30 @@
+
+
+
+topíc: Knowledge check
+
+link: https://www.theodinproject.com/lessons/foundations-lists#knowledge-check
+
+
+
+1. What HTML element is used to create an unordered list?
+ul and li tags
+
+<ul>
+ <li></li>
+</ul> 
+
+
+2. What HTML element is used to create an ordered list?
+ol and li tags
+
+
+<ol>
+ <li></li>
+</ol> 
+
+
+
+3. What HTML element is used to create list items within both unordered and ordered lists?
+
+can be any of the two inside another one.

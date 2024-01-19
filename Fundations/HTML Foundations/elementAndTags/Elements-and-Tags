@@ -1,0 +1,16 @@
+Topic: Elements and Tags
+
+Link: https://www.theodinproject.com/lessons/foundations-elements-and-tags
+
+Elements and tags
+Almost all elements on an HTML page are just pieces of content wrapped in opening and closing HTML tags.
+
+They are comprised of a keyword enclosed in angle brackets <>
+Closing tags tell the browser where an element ends.
+
+example: <p>some text content</p>
+
+You can think of elements as containers for content. The opening and closing tags tell the browser what content the element contains. The browser can then use that information to determine how it should interpret and format the content.
+
+Void Elements
+Some HTML elements do not have a closing tag. These elements just have a single tag, like: <br> or <img>. They are known as void elements because they are void of any content, there is nothing inside of them. No closing tag means they can’t wrap content like other tags do.

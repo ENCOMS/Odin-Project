@@ -1,0 +1,33 @@
+Topic: Knowledge check
+
+link: https://www.theodinproject.com/lessons/foundations-introduction-to-git
+
+Objective: Answer questions to check your understanding of this lesson on your own.
+
+1- What kind of program is Git?
+Answer:
+Is a Distributive Version Control System that keeps a copy of the project in every computer that works on it, so everyone can keep working even if the server goes down.
+
+2-What are the differences between Git and a text editor in terms of what they save and their record keeping?
+Git is more organize and no error prone, the information if commited is difficult to lose.
+
+We can check what was changed and by who and revert changes with not much problems.
+
+For backup of the data, git keep a clone in every computer that works in the project and have github for online storage of the project so is pretty difficult to lose a file.
+
+5- Does Git work at a local or remote level?
+Works locally and then pull or push commints when it have connection to the internet, so the work wont be stopped.
+
+6- Does GitHub work at a local or remote level?
+Is a online service, so is on remote level, and it can keep all the commits in one place when the team members have the time to send commits to it.
+
+7- Why is Git useful for developers?
+Several reasons:
+Secure
+Fast
+Flexible
+Better commit history
+
+8- Why are Git and GitHub useful for a team of developers?
+
+Since Git is more local, github allows teams to work together in one place, offering the advantages of a central versioning control server, but without the downsides. Plus a lot of other options that offer a better experience for teams to work with.

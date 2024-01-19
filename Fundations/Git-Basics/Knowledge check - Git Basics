@@ -1,0 +1,46 @@
+Topic: Knowledge check
+
+Link: https://www.theodinproject.com/lessons/foundations-git-basics
+
+1. How do you create a new repository on GitHub?
+- Click in the plus icon and select new repository.
+- Add the name of the repository
+- Add the REAME.md
+- Press Create repository
+
+2. How do you copy a repository onto your local machine from GitHub?
+- First create the folder where you gonna clone the github repo and enter the folder.
+- Copy the SSH link from the github repo.
+- Open the terminal and type:
+- git clone Add_the_SSH_link_from_github
+- Enter the clone folder.
+
+3. What is the default name of your remote connection?
+origin / main
+
+5. Explain what origin is in git push origin main.
+origin denotes the remote repo where the project live.
+git push origin main is the more specific way to push the changes to the remote server.
+
+6. Explain what main is in git push origin main.
+Is the name of the main branch or trunk.
+
+7. Explain the two-stage system that Git uses to save files.
+Is the stage area and commit repo.
+The stage area is a waiting room, where all the modified files await to be commited to the repo.
+
+8. How do you check the status of your current repository?
+using the command: git status and git log
+
+9. How do you add files to the staging area in git?
+using the commmand: git add nameOfTheFile
+
+10. How do you commit the files in the staging area and add a descriptive message?
+git commit -m "atomicMessage"
+
+11. How do you push your changes to your repository on GitHub?
+if there is only one branch and is not another remote repo:
+git push
+
+12. How do you look at the history of your previous commits?
+using the command: git log

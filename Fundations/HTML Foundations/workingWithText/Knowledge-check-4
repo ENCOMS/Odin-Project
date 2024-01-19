@@ -1,0 +1,29 @@
+Topic: Knowledge check
+
+Link: https://www.theodinproject.com/lessons/foundations-working-with-text#knowledge-check
+
+Knowledge check:
+
+1. How do you create a paragraph in HTML?
+using the p tags
+
+2. How do you create a heading in HTML?
+using h1 to h6 tags depending of the importance
+
+3. How many different levels of headings are there and what is the difference between them?
+h1 to h6, h1 it has the biggest font and h6 the smallest font of all.
+
+4. What element should you use to make text bold and important?
+strong tags
+
+5. What element should you use to make text italicized to add emphasis to it?
+em tags
+
+6. What relationship does an element have with any nested elements within it?
+parent and child elements this relationship is more important in the DOM or document object model
+
+7. What relationship do two elements have if they are at the same level of nesting?
+Both are siblinds of they parent tag
+
+8. How do you create HTML comments?
+we use <!-- --> tags as to comment, we can use too /* */ for multiple lines.

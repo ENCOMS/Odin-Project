@@ -1,0 +1,15 @@
+Topic: Knowledge check
+
+Link: https://www.theodinproject.com/lessons/foundations-html-boilerplate#knowledge-check
+
+1. What is the purpose of the doctype declaration?
+To indicate the browser that is gonna work in an HTML file, and maybe indica with wich version is gonna work with.
+
+2. What is the HTML element?
+Is the start tag, where all the other tags populated, except doctype.
+
+3. What is the purpose of the head element?
+to hold the tags that need to be load everyting else. Like metadata, title, links, scripts.
+
+4. What is the purpose of the body element?
+The body element holds the content that is gonna be render by the browser.

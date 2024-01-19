@@ -1,0 +1,103 @@
+Topic: HTML Boilerplate
+
+Link: https://www.theodinproject.com/lessons/foundations-html-boilerplate
+
+Creating an HTML file
+Steps:
+    Create a folder name html-boilerplate
+        create a html file: index.html
+
+Server will default search for index.html file, not having one will cause big problems.
+
+The DOCTYPE
+Every HTML page starts with a doctype declaration. The doctype’s purpose is to tell the browser what version of HTML it should use to render the document. The latest version of HTML is HTML5, and the doctype for that version is <!DOCTYPE html>.
+
+example:
+
+If want to use older versions are someting like this:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+If there is no need
+<!DOCTYPE html>. this will sufise.
+
+HTML element
+This will hold the document tags that will be render by the browser.
+example:
+
+<!DOCTYPE html>
+<html lang="en">
+</html>
+
+- In this case, HTML tag have an attribute call lang.
+- Lang attribute indicates the type of language is gonna use the content of the document in on the contents inside of it.
+
+What is the lang attribute?
+lang specifies the language of the text content in that element. This attribute is primarily used for improving accessibility of the webpage. It allows assistive technologies, for example screen readers, to adapt according to the language and invoke correct pronunciation.
+
+Head element
+The <head> element is where we put important meta-information about our webpages, and stuff required for our webpages to render correctly in the browser. Inside the <head>, we should not use any element that displays content on the webpage.
+
+Meta element
+We should always have the <meta> tag with the charset encoding of the webpage in the <head> element: <meta charset="utf-8">.
+
+Setting the encoding is very important because it ensures that the webpage will display special symbols and characters from different languages correctly in the browser.
+
+Title element
+Another element we should always include in the head of an HTML document is the <title> element:
+
+<title>My First Webpage</title>
+
+The <title> element is used to give webpages a human-readable title which is displayed in our webpage’s browser tab. For example, if you look at the current tab’s name of your browser, it will read “HTML Boilerplate | The Odin Project”; this is the <title> of the current .html file.
+
+If we didn’t include a <title> element, the webpage’s title would default to its file name. In our case that would be index.html
+
+link tag: to include some CDN that is needed for work in the document
+
+script: generally can be in the head section, but is mostly place at the end of the html document for render reasons.
+
+
+Body element
+The final element needed to complete the HTML boilerplate is the <body> element. This is where all the content that will be displayed to users will go - the text, images, lists, links, and so on.
+
+To complete the boilerplate, add a <body> element to the index.html file. The <body> element also goes within the <html> element and is always below the <head> element, like so:
+
+Body element
+The final element needed to complete the HTML boilerplate is the <body> element. This is where all the content that will be displayed to users will go - the text, images, lists, links, and so on.
+
+To complete the boilerplate, add a <body> element to the index.html file. The <body> element also goes within the <html> element and is always below the <head> element, like so:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+  </head>
+
+  <body>
+  </body>
+</html>
+
+Runing in the browser
+
+Windows
+right click, open with chrome based browser
+
+Linux
+google-chrome index.html
+
+the code need someting inside the body to render and show someting:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+  </head>
+
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</html>
+
+Using VSCODE
+using the shortcut ! at the start of a new index document will create and populate a boilerplate for us.

@@ -1,0 +1,18 @@
+Topic: Knowledge check
+
+Link: https://www.theodinproject.com/lessons/foundations-elements-and-tags#knowledge-check
+
+
+
+1. What is an HTML tag?
+Are elements that contains or make reference to some information, they use <> for opening tags and </> for closing tags, but they are some that only have a selfclosing tag.
+
+2. What are the three parts of an HTML element?
+opening tag
+<p>
+
+Content
+"Text between the tags" (no " nesesary, only if is needed to be show)
+
+closing tag
+</p>

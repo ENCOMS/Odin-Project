@@ -1,0 +1,77 @@
+Topic: Working with Text
+
+Link: https://www.theodinproject.com/lessons/foundations-working-with-text
+
+Lesson overview:
+-----------------
+
+- How to create paragraphs.
+no formats:
+simple adding text between the body tags
+
+As it name tells it will display text but witout format what so ever.
+
+When the browser encounters new lines like this in your HTML, it will compress them down into one single space. The result of this compression is that all of the text is clumped together into one long line.
+
+If we want to create paragraphs in HTML, we need to use the paragraph element, which will add a new line after each of our paragraphs. A paragraph element is defined by wrapping text content with a <p> tag.
+
+p
+this tags are specific for paragraths and titles, they have a special format that the browser can render correctly.
+
+- How to create headings.
+
+h1, h2 etc
+Headings are different from other HTML text elements: they are displayed larger and bolder than other text to signify that they are headings.
+
+There are 6 different levels of headings starting from <h1> to <h6>. The number within a heading tag represents that heading’s level. The largest and most important heading is h1, while h6 is the tiniest heading at the lowest level.
+
+Headings are defined much like paragraphs. For example, to create a h1 heading, we wrap our heading text in a <h1> tag.
+
+Using the correct level of heading is important as levels provide a hierarchy to the content. A h1 heading should always be used for the heading of the overall page, and the lower level headings should be used as the headings for content in smaller sections of the page.
+
+
+- How to create bold text.
+Strong element
+The <strong> element makes text bold. It also semantically marks text as important; this affects tools, like screen readers, that users with visual impairments will rely on to use your website. The tone of voice on some screen readers will change to communicate the importance of the text within a strong element. To define a strong element we wrap text content in a <strong> tag.
+
+It can be use inside other tags too
+
+- How to create italicized text.
+Em element
+The <em> element makes text italic. It also semantically places emphasis on the text, which again may affect things like screen readers. To define an emphasised element we wrap text content in a <em> tag.
+
+like strong, it can be use inside other tags
+
+- The relationships between nested elements.
+Nesting and indentation
+You may have noticed that in all the examples in this lesson we indent any elements that are within other elements. This is known as nesting elements.
+
+When we nest elements within other elements, we create a parent and child relationship between them. The nested elements are the children and the element they are nested within is the parent.
+
+Just as in human relationships, HTML parent elements can have many children. Elements at the same level of nesting are considered to be siblings.
+
+For example, the two paragraphs in the following code are siblings, since they are both children of the body tag and are at the same level of nesting as each other
+
+- How to create HTML comments.
+
+HTML comments
+HTML comments are not visible to the browser; they allow us to comment on our code so that other developers or our future selves can read them and get some context about something that might not be clear in the code.
+
+In order to write an HTML comment, we just enclose the comment with <!-- and -->
+
+
+Uses of strong, em, b and i tags
+
+taking advantage of more semantic HTML options gives your markup meaning to web browsers and screen readers, helps with SEO, makes it easier to read and debug, and provides a better overall experience to your users.
+
+When to Use the <strong> Tag
+The <strong> tag is used when we want to indicate the importance, seriousness, or urgency of a word or section of content without changing the meaning of the content itself.
+
+When to Use the <em> Tag
+The <em> tag places stress emphasis on a particular piece of content in a way that changes the actual meaning of the content. Whenever we want to emphasize something in our markup with verbal stress, we should use <em> tags.²
+
+When to Use the <b> Tag
+The <b> tag draws attentions to word or section of content for utilitarian purposes without conveying extra importance, emphasis, alternate voice or mood, etc.³ It is the least semantic of the HTML tags we’ve discussed in this post, and should only be used when no other tag is more appropriate.
+
+When to Use the <i> Tag
+The <i> tag is used to convey a different mood or voice from the surrounding content. It’s often used with foreign words or idiomatic phrases, technical terms, ship names, thoughts, etc.³

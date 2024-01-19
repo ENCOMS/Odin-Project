@@ -1,0 +1,27 @@
+Topic: Knowledge check
+
+Link: https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css#knowledge-check
+
+
+Knowledge check
+
+1. What do HTML and CSS stand for?
+HTML is Hyper text Markup language, is a markup language that is used to structure the information on the document.
+
+CSS Cascade style sheet, is a design languange, used to give style to the document.
+
+2. Between HTML and CSS, which would you use for putting paragraphs of text on a webpage?
+HTML p tags ex: <p>Text inside</p>
+
+3. Between HTML and CSS, which would you use for changing the font and background color of a button?
+CSS
+.classButton {
+    background-color: red;
+    color: white;
+}
+
+4. What is the difference between HTML, CSS and JavaScript?
+
+- HTML is used mainly to structure the document
+- CSS is used to mainly to give style to the document.
+- JavaScript is used to give logic and responsivenes to the document.

@@ -1,0 +1,81 @@
+Topic: Introduction
+
+link: https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css
+
+HTML and CSS
+are two languages, HTML is the raw data that a webpage is built on. CSS is what adds style to those plain elements.
+
+They are not programming languages, HTML is a markup language and CSS a style sheet language.
+JavaScript is a programming language, since it can include logic to a webpage.
+
+- HTML markup language
+- CSS style language
+- JavaScript logic languange
+
+What can you do with each languange:
+- With HTML, you will be able to create the structure of your website.
+- CSS gives you the ability to make the website look more visually appealing
+- As for JavaScript, this is a robust programming language that allows you to effectively change the HTML and CSS components of your website to match your specifications precisely, handle events, animations, information, communication and much more.
+
+Purpose of this Languages:
+--------------------------
+
+Some of the most common web developement languanges include: HTML, CSS, JavaScript, PHP, Python, Ruby and SQL.
+
+All of this languanges have they different purpose
+
+Ruby is a scalable and fast programming languange that help build an extensive website or program in just a short period of time. if paired with Ruby on Rails framework, this languange gives developers practically everyiting they need to build a website.
+
+language like SQL, developers can maintain and optimize large databases in a much more streamlined manner
+
+Different types of projects incorporate different languages of code. Many professional web developers also have their own preferences that they will use even if other programming languages have proven to be more popular. Various platforms are built on different languages. For instance, WordPress is built mainly with powerful PHP code even though HTML and CSS are used as well.
+
+The main language that you use all depends on your specific project and the business goals that you have.
+
+By identifying what these goals are, you should have a better idea of which languages are ideal when you are developing a website or application.
+
+What is HTML
+- HTML is a programming language that stands for Hypertext Markup Language.
+- Allows web developers and website owners to create the structure of their websites
+- Any text files can be tagged for effects, graphics, fonts, or colors.
+
+What HTML allows us to do:
+- It allows you as a website owner to create the basic structure of you website, from which you can use any other coding language to enhance the design.
+- With a basic understanding of HTML, you can significantly increase the control and flexibility that you have with your website.
+- You’ll be able to make your own changes by having knowledge of this code.
+- Some platforms will automatically implement many of the more complex functions of a website design, which leaves you with the ability to tend to the minor changes that can be made with HTML.
+
+
+What is CSS
+CSS is a style sheet language that’s focused almost entirely on improving the presentation of HTML elements. While CSS is a static programming language, it can be used to make your website appear visually pleasing and modern.
+
+What Can You Do With CSS?
+- Even though CSS is primarily used to create static visual effects, the latest versions of the programming language offer some functionality for the creation of very simple animations.
+- If you want to change the color of some of the text on a web page, basic CSS would allow you to do so by adding “style” code to the HTML code that’s already found on your page.
+- Along with the presentation of HTML, CSS can also be used to alter the layout and formatting of your website.
+- Once you know the basics of CSS, you should be capable of improving the look of your website and all of the HTML that you have already added to the design.
+
+What is JavaScript?
+JavaScript programming language gives you the tools that you need to alter the behavior of different elements that are found on a website page. With this tool, you can add a layer of interactivity to the CSS and HTML elements on your website, which is highly recommended if you want your website to appeal to the modern customer.
+
+With a basic understanding of JavaScript, you can manipulate the various interactive features of your website to perform a wide range of actions. If you want to have complete control over the design and function of your website, you should know at least some of the coding involved with JavaScript.
+
+What Can You Do With JavaScript?
+The types of things that you can do with JavaScript are practically limitless. This programming language can provide you with the tools needed to:
+
+- Create a calculator for your website
+- Create various keyboard shortcuts that allow users to effortlessly navigate to other pages
+- Play animations when users scroll down the page
+Since you can change your HTML and CSS elements with JavaScript, this can be a very beneficial language to learn.
+
+For front end developement:
+HTML5. CSS3, Bootstrap, JavaScript.
+
+For back end developement:
+Python, Ruby, PHP.
+
+Tips:
+- Search to learn in a structure manner, so you can learn effectively any of the languages.
+- This all are Writing languages, so writing them is the best and only way to improve.
+
+
