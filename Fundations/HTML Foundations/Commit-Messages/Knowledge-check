@@ -1,0 +1,13 @@
+Topic: Knowledge check
+
+Link: https://www.theodinproject.com/lessons/foundations-commit-messages#knowledge-check
+
+
+1. What are two benefits of having well-written commit messages and a good commit history?
+To know the why and how of a commit
+
+A good commit history helps in future people that check the logs and the future you, if you check the why and how of previous commits.
+
+2. How many characters should the subject line of your commit message be?
+
+A good commit subject with 50 character long will be enough, hard limit 72 characters.
