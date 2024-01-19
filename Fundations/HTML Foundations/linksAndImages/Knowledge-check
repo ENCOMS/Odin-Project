@@ -1,0 +1,38 @@
+topic: Knowledge check
+
+link: https://www.theodinproject.com/lessons/foundations-links-and-images
+
+
+
+
+Anchor elements
+are the tags that are used to connect the documents in html
+<a href="#">anchor</a>
+
+it can point to a external o internal place
+
+Opening links in a new tab
+this is using an attribute of a tag, called target, with the use of _blank value
+<a href="#" target="_blank">anchor</a>
+
+Absolute and relative links
+Absolute links
+Are full links, internal or external, is the complete path of a resourse.
+
+Relative links
+it works with relative paths, in this case it change the use of folders and such to symbolic operation that ensure that if the project is run elsewere can still be complete and witout errors.
+
+A metaphor
+it helps comprenhending the relative paths.
+
+Images
+a web page need images, in html we use <img src="$"/> to include images in a web page.
+
+Parent directories
+generally speaking is where the index file reside.
+
+Alt attribute
+is used in anchors, img and more, it helps say what is the content of the link or img if there are errors rendering them.
+
+Image size attributes
+we can change an img width and height attributes in pixel, viewport and other types of sizes.
