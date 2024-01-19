@@ -1,0 +1,135 @@
+topic: Links and Images
+
+link: https://www.theodinproject.com/lessons/foundations-links-and-images
+
+Lesson overview
+---------------
+
+1. How to create links to pages on other websites on the internet.
+2. How to create links to other pages on your own websites.
+3. The difference between absolute and relative links.
+How to display an image on a webpage using HTML.
+
+
+creating the working-files:
+
+open terminal
+    browse to your work folder
+        create a new directory
+        mkdir odin-links-and-images
+            cd odin-links-and-images
+                create a file index.html
+                    With vscode use ! to create a default boilerplate
+                        populate with:
+                            <h1>Homepage</h1>
+
+Adding an anchor
+in the index.html inside body
+    <a>Click me</a>
+
+Only is missing his attributes atm.
+
+An attribute is usually made up of two parts: a name, and a value; however, not all attributes require a value
+
+
+Adding the anchor attribute of href
+    <a href="https://www.theodinproject.com/about">click me</a>
+
+You can use anchor tags to link to any kind of resource on the internet, not just other HTML documents. You can link to videos, pdf files, images, and so on, but for the most part, you will be linking to other HTML documents.
+
+Default behavior of href: if a link, it opens the link in the same webpage or target="_self"
+
+To change default behavior: we use target attribute, in this case target="_blank" to open a new tab:
+<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>
+
+rel attribute: This attribute is used to describe the relation between the current page and the linked document.
+
+For security reasons and good practice, in the rel attribute should have this two values, noopener noreferrer
+
+The noopener value prevents the opened link from gaining access to the webpage from which it was opened.
+
+The noreferrer value prevents the opened link from knowing which webpage or resource has a link (or ‘reference’) to it. It also includes the noopener behaviour and thus can be used by itself as well.
+
+In a nut shell they protect us like this:
+noopener prevents phishing attacks where the opened link may change the original webpage to a different one to trick users. This is referred to as tabnabbing. 
+
+Adding the noreferrer value can be done if you wish to not let the opened link know that your webpage links to it.
+
+Absolute and relative links
+---------------------------
+Generally, there are two kinds of links we will create:
+
+Links to pages on other websites on the internet.
+Links to pages located on our own websites.
+
+Absolute links
+--------------
+Links to pages on other websites on the internet are called absolute links. A typical absolute link will be made up of the following parts: protocol://domain/path. An absolute link will always contain the protocol and domain of the destination.
+
+Relative links
+-------------
+Links to other pages within our own website are called relative links. Relative links do not include the domain name, since it is another page on the same site, it assumes the domain name will be the same as the page we created the link on.
+
+Relative links only include the file path to the other page, relative to the page you are creating the link on. This is quite abstract, let’s see this in action using an example.
+
+root directory
+    reside index.html and other folder or files
+
+creating pages directory and about.html
+mkdir pages
+    cd pages
+        touch about.html
+
+connect index.html and about
+
+in index.html
+    <a href="./pages/about.html">About</a>
+
+in pages/about
+    <a href="..">About</a>
+
+.. back to root folder
+
+Prepending ./pages/about.html
+will help eliminate some errors trying to find the page.
+
+
+Images
+<img>
+
+To display an image in HTML we use the <img> element. Unlike the other elements we have encountered, the <img> element is self-closing. Empty, self-closing HTML elements do not need a closing tag.
+
+
+Parent directories
+-----------------
+To go to the parent directory we need to use two dots in the relative filepath like this: ../. Let’s see this in action, within the body of the about.html file, add the following image below the heading we added earlier:
+
+<img src="../images/dog.jpg">
+
+
+To break this down:
+-------------------
+
+1. First, we are going to the parent directory of the pages directory which is odin-links-and-images.
+2. Then, from the parent directory, we can go into the images directory.
+3. Finally, we can access the dog.jpg file.
+
+
+Using the metaphor we used earlier, using ../ in a filepath is kind of like stepping out from the room you are currently in to the main hallway so you can go to another room
+
+Alt attribute
+--------------
+Besides the src attribute, every image element must also have an alt (alternative text) attribute.
+
+The alt attribute is used to describe an image. It will be used in place of the image if it cannot be loaded. It is also used with screen readers to describe what the image is to visually impaired users.
+
+
+Image size attributes
+---------------------
+Image size attributes
+While not strictly required, specifying height and width attributes in image tags helps the browser layout the page without causing the page to jump and flash.
+
+It is a good habit to always specify these attributes on every image, even when the image is the correct size or you are using CSS to modify it
+
+<img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+
