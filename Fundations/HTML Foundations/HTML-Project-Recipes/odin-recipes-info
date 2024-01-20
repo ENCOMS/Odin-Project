@@ -1,0 +1,20 @@
+Topic: Project: Recipes
+
+Link: https://www.theodinproject.com/lessons/foundations-recipes
+
+If the setup of git is correct
+Create a new repo on GitHub
+    odin-recipes
+        public
+
+cd repos directory
+    git clone git@github.com:username/odin-recipes.git
+        cd odin-recipes
+
+edit README.md
+    code README.md
+        create a brief introduction
+        - What the current project is
+        - What skills you will demonstrated once completed.
+        tip: it can be done at the end after a self-reflection.
+
