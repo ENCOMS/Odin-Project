@@ -1,0 +1,129 @@
+/* Loading a Self-Hosted Font With @font-face*/
+
+@font-face {
+    /*first src is for compatibility with IE<9*/
+
+    /* Fira Sans Thin */
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Thin.eot');
+    src: url('fonts/fira/eot/FiraSans-Thin.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Thin.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-ThinItalic.eot');
+    src: url('fonts/fira/eot/FiraSans-ThinItalic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-ThinItalic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-ThinItalic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  /* Fira Sans Light */
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Light.eot');
+    src: url('fonts/fira/eot/FiraSans-Light.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Light.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Light.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-LightItalic.eot');
+    src: url('fonts/fira/eot/FiraSans-LightItalic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-LightItalic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-LightItalic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+  }
+
+
+    /* Fira Sans Regular */
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Regular.eot');
+    src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Italic.eot');
+    src: url('fonts/fira/eot/FiraSans-Italic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Italic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Italic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Fira Sans Bold */
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Bold.eot');
+    src: url('fonts/fira/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Bold.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Bold.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-BoldItalic.eot');
+    src: url('fonts/fira/eot/FiraSans-BoldItalic.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-BoldItalic.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-BoldItalic.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* class selector*/
+.subsection {
+    color: blue;
+}
+
+/* descendant selectors will take precedence since it have more class selectors*/
+.main,
+.list {
+    color: red
+}
+
+body {
+    margin: 0;
+    background-color: hsl (0,0%,100%);
+    color: hsl(0, 0%, 10%);
+    line-height: 1.5;
+    /*
+    Web hosted fonts
+    font-family: "Open Sans", "PT Sans", Calibri, Tahoma, sans-serif;
+    */
+    font-family: "Fira Sans"", PT Sans", Calibri, Tahoma, sans-serif;
+}

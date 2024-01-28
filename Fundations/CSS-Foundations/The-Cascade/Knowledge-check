@@ -1,0 +1,7 @@
+# Topic: Knowledge check
+
+# link: https://www.theodinproject.com/lessons/foundations-the-cascade#knowledge-check
+
+1. Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
+
+R: if the selector is not an ID, a single class will lose if the next one is a group, chain or descendant, since if it has more classes it wins the tie.
