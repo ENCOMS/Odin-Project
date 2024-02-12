@@ -1,6 +1,6 @@
 # Topic: The Box Model
 
-# link: https://www.theodinproject.com/lessons/foundations-the-box-model
+## link: https://www.theodinproject.com/lessons/foundations-the-box-model
 
 ## What is the box model
 
