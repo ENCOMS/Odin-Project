@@ -262,6 +262,10 @@ Defines the flex-shrink of the flex item. Negative values are considered invalid
 `flex-basis`
 Defines the flex-basis of the flex item. A preferred size of 0 must have a unit to avoid being interpreted as a flexibility. Defaults to 0 when omitted. (initial is auto)
 
+## Default flexbox properties and values
+
+
+
 ## Knowledge check
 
 - What are the 3 values defined in the shorthand flex property (e.g. flex: 1 1 auto)?
@@ -273,8 +277,27 @@ this is equal say flex: auto
 - What are the 3 defined values for the flex shorthand flex:auto?
 flex: 1 1 auto
 
+**For the flex container:**
+
+```css
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: stretch;
+```
+
+**For its flex items:**
+
+```css
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+order: 0;
+```
+
 ### links
 
 - <https://www.theodinproject.com/lessons/foundations-growing-and-shrinking>
 - <https://www.samanthaming.com/flexbox30/24-flex-shrink-calculation/>
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/flex>
+- <https://dev.to/paulnthompson84/default-flexbox-what-does-display-flex-do-4nia>
