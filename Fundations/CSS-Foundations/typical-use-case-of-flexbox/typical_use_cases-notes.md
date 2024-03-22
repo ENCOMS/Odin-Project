@@ -49,7 +49,3 @@ for this we use flex-direction to row reverse.
 ## Form controls
 
 We can give better style and behaviors using, controlling how much it can grow and shrink width flex properties.
-
-
-
-
