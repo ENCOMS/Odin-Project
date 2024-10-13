@@ -1,74 +1,123 @@
 # Topic: Setup Git
 
-[Odin Project - Lesson setting up git:](https://www.theodinproject.com/lessons/foundations-setting-up-git)
+[Odin Project - Setting up git](https://www.theodinproject.com/lessons/foundations-setting-up-git)
 
 ## Installing Git
 
 ### Ubuntu Based
 
 ***Update the system***
-    sudo apt update
-    sudo apt upgrade
+
+```console
+sudo apt update
+sudo apt upgrade
+```
 
 ***Install Git***
-    sudo add-apt-repository ppa:git-core/ppa
-    sudo apt update
-    sudo apt install git
+
+```console
+sudo add-apt-repository ppa:git-core/ppa
+
+sudo apt update
+sudo apt install git
+```
 
 ***Verify version***
-    git --version
+
+```console
+git --version
+```
 
 ### Arch-Linux - Manjaro
 
 ***Update the system***
-    sudo pacman -Syu
+
+```console
+sudo pacman -Syu
+```
 
 ***Install git***
-    sudo pacman -S git
+
+```console
+sudo pacman -S git
+```
 
 ***Verify installation***
-    git --version
+
+```console
+git --version
+```
 
 ## Setup Git
 
 ***Enter user information***
-    git config --global user.name "Your Name"
-    git config --global user.email "yourname@example.com"
+
+```console
+git config --global user.name "Your Name"
+
+git config --global user.email "yourname@example.com"
+```
 
 ***Optional - enter private GitHub email address***
-    git config --global user.email "123456789+odin@users.noreply.github.com" # Remember to use your own private GitHub email here.
+
+```console
+git config --global user.email "123456789+odin@users.noreply.github.com" 
+
+# Remember to use your own private GitHub email here.
+```
 
 ***Change in git master to main, for GitHub compatibility***
-    git config --global init.defaultBranch main
+
+```console
+git config --global init.defaultBranch main
+```
 
 ***Enable colorful ui***
-    git config --global color.ui auto
+
+```console
+git config --global color.ui auto
+```
 
 ***Setting default branch reconciliation behavior to merging***
-    git config --global pull.rebase false
+
+```console
+git config --global pull.rebase false
+```
 
 ***Checking configuration***
-    git config --get user.name
-    git config --get user.email
+
+```console
+git config --get user.name
+
+git config --get user.email
+```
 
 ## Setting up SSH
 
 ***Check if the ed25519 is already created***
+```console
     ls ~/.ssh/id_ed25519.pub
+```
 
 ***If not created, Create a ed25519 SSH key***
-    ssh-keygen -t ed25519 -C "your@email.com"
+```console
+ssh-keygen -t ed25519 -C "your@email.com"
 
-    location: press enter
-    password: press enter
+location: press enter
+password: press enter
+```
 
-***Linking SSH key to GitHub***
-    Retrieve and copy public key
+## Linking SSH key to GitHub
 
-    > cat ~/.ssh/id_ed25519.pub
-    > copy from ssh-ed25519 until the end with your email address.
+***Retrieve and copy public key***
 
-## Sign in GitHub Steps
+```console
+cat ~/.ssh/id_ed25519.pub
+
+copy from ssh-ed25519 until the end with your email address.
+```
+
+***Sign in GitHub and enter the public key***
 
 1. Profile
 2. Settings
@@ -79,18 +128,32 @@
 ## Testing SSH Connection to GitHub
 
 ***Check if all is ok***
-    ssh -T git@github.com
 
-***If there is warning like this*** 
-    > The authenticity of host 'github.com (IP ADDRESS)' can't be established.
-    > ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
-    > Are you sure you want to continue connecting (yes/no)?
+```console
+ssh -T git@github.com
+```
+
+***If there is warning like this***
+
+```console
+The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+
+Are you sure you want to continue connecting (yes/no)?
+```
 
 ***Verify that the fingerprint is like this GitHub's public key fingerprint for Ed25519***
-    > SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU (Ed25519)
+
+```console
+SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU (Ed25519)
+```
 
 ***If the fingerprint match***
-    press OK
+press OK
 
 ***It should show a message like this***
-    > Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+
+```console
+Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+```
